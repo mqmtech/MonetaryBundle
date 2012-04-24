@@ -27,15 +27,15 @@ class MonetaryExtension extends \Twig_Extension {
      */
     public function getFunctions() {
         return array(
-            'currencySymbol' => new \Twig_Function_Method($this, 'currencySymbol'),
-            'noPriceAccess' => new \Twig_Function_Method($this, 'noPriceAccess'),
+            'mqm_monetary_currency_symbol' => new \Twig_Function_Method($this, 'currencySymbol'),
+            'mqm_monetary_price_access_denied' => new \Twig_Function_Method($this, 'noPriceAccess'),
         );
     }
     
     public function getFilters() {
         return array(
-            'roundoff' => new \Twig_Filter_Method($this, 'roundoff'),
-            'toPrettyPrice' => new \Twig_Filter_Method($this, 'toPrettyPrice'),
+            'mqm_monetary_roundoff' => new \Twig_Filter_Method($this, 'roundoff'),
+            'mqm_monetary_pretty_price' => new \Twig_Filter_Method($this, 'toPrettyPrice'),
         );
     }        
     
