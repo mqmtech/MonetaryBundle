@@ -3,7 +3,7 @@
 namespace MQM\MonetaryBundle\Monetary;
 
 use MQM\MonetaryBundle\Monetary\MonetaryManagerInterface;
-use MQM\MonetaryBundle\Monetary\PropertiesInterface;
+use MQM\ToolsBundle\IO\PropertiesInterface;
 
 
 

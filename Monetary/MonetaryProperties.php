@@ -2,7 +2,7 @@
 
 namespace MQM\MonetaryBundle\Monetary;
 
-use MQM\MonetaryBundle\Monetary\PropertiesInterface;
+use MQM\ToolsBundle\IO\PropertiesInterface;
 
 final class MonetaryProperties implements PropertiesInterface
 {
@@ -24,5 +24,17 @@ final class MonetaryProperties implements PropertiesInterface
             return self::$CONFIG[$name];  
       
       return null;
+    }
+
+    public function parse($path = null)
+    {
+        return $this;
+    }
+
+    public function setProperty($property, $value)
+    {
+        self::$CONFIG[$property] = $value;
+        
+        return $this;
     }
 }
