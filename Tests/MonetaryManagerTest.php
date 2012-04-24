@@ -2,7 +2,7 @@
 
 namespace MQM\MonetaryBundle\Tests;
 
-use Symfony\Bundle\FrameworkBundle\Tests\Functional\AppKernel;
+
 
 class MonetaryManagerTest extends \Symfony\Bundle\FrameworkBundle\Test\WebTestCase
 {   
